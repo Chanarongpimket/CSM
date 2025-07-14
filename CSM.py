@@ -12,10 +12,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 <<<<<<< Updated upstream:CSM.py
+<<<<<<< Updated upstream:CSM.py
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
+=======
+from selenium.webdriver.chrome.service import Service 
+>>>>>>> Stashed changes:csm_form.py
 =======
 from selenium.webdriver.chrome.service import Service 
 >>>>>>> Stashed changes:csm_form.py
@@ -136,7 +140,11 @@ def run_automation(USERNAME, PASSWORD, TASK_NOTE, activity, datetime_fields, pro
     chrome_options.add_experimental_option("detach", True)
 
 <<<<<<< Updated upstream:CSM.py
+<<<<<<< Updated upstream:CSM.py
     service = Service(ChromeDriverManager().install())  
+=======
+    service = Service(get_driver_path())  # ← แทน executable_path
+>>>>>>> Stashed changes:csm_form.py
 =======
     service = Service(get_driver_path())  # ← แทน executable_path
 >>>>>>> Stashed changes:csm_form.py
